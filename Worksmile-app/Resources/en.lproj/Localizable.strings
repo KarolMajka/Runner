@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Worksmile-app
+
+  Created by Karol Majka on 22/11/2020.
+  
+*/
+
+"loc_error_not_found" = "Not found";
+
+"loc_path_title" = "Your path";
+"loc_path_anomaly_button_title" = "Show/Hide anomalies";
+"loc_path_coordinate_title" = "Coordinates";
+"loc_path_distance_title" = "Distance";
+"loc_path_anomaly_info" = "THE POINT HAS BEEN CLASSIFIED AS INVALID.";

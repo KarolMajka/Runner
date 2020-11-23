@@ -3,18 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3594536C9A8D0E35FB5C32 /* Pods_Worksmile_app_Worksmile_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E580153EF6557F923904C174 /* Pods_Worksmile_app_Worksmile_appUITests.framework */; };
+		511A9309CF34BA35FC3A8A38 /* Pods_Worksmile_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F279EA48E03208DECC848664 /* Pods_Worksmile_appTests.framework */; };
+		B7CFDE3125849B35FD6F0701 /* Pods_Worksmile_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B431592D6705863240D5C1 /* Pods_Worksmile_app.framework */; };
+		F91D0C8B256AACDB006C85B4 /* PathAnomalyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0C8A256AACDB006C85B4 /* PathAnomalyInteractorTests.swift */; };
+		F91D0C9A256AB00B006C85B4 /* MockPointsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0C8F256AAD1D006C85B4 /* MockPointsService.swift */; };
+		F91D0CB0256AB248006C85B4 /* PathViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0CAF256AB248006C85B4 /* PathViewModelTests.swift */; };
+		F91D0CC3256AC67E006C85B4 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0CC2256AC67E006C85B4 /* AppDependencies.swift */; };
+		F91D0CCE256B0671006C85B4 /* PathPointCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0CCD256B0671006C85B4 /* PathPointCellViewModelTests.swift */; };
+		F91D0CD6256B0AA5006C85B4 /* PathMapCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0CD5256B0AA5006C85B4 /* PathMapCellViewModelTests.swift */; };
+		F91D0CF8256B1755006C85B4 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0CF7256B1755006C85B4 /* SnapshotTestCase.swift */; };
+		F91D0F7D256C6508006C85B4 /* SnapshotContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0F7C256C6508006C85B4 /* SnapshotContainerView.swift */; };
+		F91D0F85256C6542006C85B4 /* SnapshotTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0F84256C6542006C85B4 /* SnapshotTableView.swift */; };
+		F91D0F8A256C656C006C85B4 /* TableViewCellSnapshotContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D0F89256C656C006C85B4 /* TableViewCellSnapshotContainerView.swift */; };
+		F94CA134256AA3E3004B8B18 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F94CA136256AA3E3004B8B18 /* Localizable.strings */; };
+		F94CA140256AA421004B8B18 /* StringsGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA13E256AA421004B8B18 /* StringsGen.swift */; };
+		F94CA141256AA421004B8B18 /* AssetsGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA13F256AA421004B8B18 /* AssetsGen.swift */; };
+		F94CA146256AA5BF004B8B18 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA145256AA5BF004B8B18 /* AppCoordinator.swift */; };
+		F94CA14E256AA5CE004B8B18 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA14D256AA5CE004B8B18 /* Coordinator.swift */; };
+		F9602E5F2569384B00367492 /* String+double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E5E2569384B00367492 /* String+double.swift */; };
+		F9602E682569397500367492 /* PointsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E672569397500367492 /* PointsService.swift */; };
+		F9602E6D25693A0F00367492 /* WorksmileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E6C25693A0F00367492 /* WorksmileError.swift */; };
+		F9602E7225693B1600367492 /* JSONDecoder+default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E7125693B1600367492 /* JSONDecoder+default.swift */; };
+		F9602E7825693BB600367492 /* CellsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E7725693BB600367492 /* CellsDataSource.swift */; };
+		F9602E7F25693D6B00367492 /* PathMapCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E7D25693D6B00367492 /* PathMapCellViewModel.swift */; };
+		F9602E8025693D6B00367492 /* PathMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E7E25693D6B00367492 /* PathMapTableViewCell.swift */; };
+		F9602E8925694D9E00367492 /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E8825694D9E00367492 /* UITableView+extensions.swift */; };
+		F9602E8E25694DDC00367492 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602E8D25694DDC00367492 /* ReusableView.swift */; };
+		F9602EA92569621800367492 /* Array+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602EA82569621800367492 /* Array+SafeAccess.swift */; };
+		F9602EAE2569937B00367492 /* UIScrollView+rxReloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602EAD2569937B00367492 /* UIScrollView+rxReloadData.swift */; };
+		F9602EB3256994E100367492 /* PathAnomalyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602EB2256994E100367492 /* PathAnomalyInteractor.swift */; };
+		F9602EBC2569B05000367492 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602EBB2569B05000367492 /* Point.swift */; };
+		F9602EC42569B21B00367492 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9602EC32569B21B00367492 /* NavigationController.swift */; };
 		F9C6279425681D8800DFC9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6279325681D8800DFC9F2 /* AppDelegate.swift */; };
 		F9C6279625681D8800DFC9F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6279525681D8800DFC9F2 /* SceneDelegate.swift */; };
-		F9C6279825681D8800DFC9F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6279725681D8800DFC9F2 /* ViewController.swift */; };
-		F9C6279B25681D8800DFC9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6279925681D8800DFC9F2 /* Main.storyboard */; };
 		F9C6279D25681D8A00DFC9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C6279C25681D8A00DFC9F2 /* Assets.xcassets */; };
 		F9C627A025681D8A00DFC9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6279E25681D8A00DFC9F2 /* LaunchScreen.storyboard */; };
-		F9C627AB25681D8B00DFC9F2 /* Worksmile_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C627AA25681D8B00DFC9F2 /* Worksmile_appTests.swift */; };
 		F9C627B625681D8B00DFC9F2 /* Worksmile_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C627B525681D8B00DFC9F2 /* Worksmile_appUITests.swift */; };
+		F9C627EF256932B900DFC9F2 /* path.json in Resources */ = {isa = PBXBuildFile; fileRef = F9C627EE256932B900DFC9F2 /* path.json */; };
+		F9DE34CE2569337D00F36DBC /* PathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34CC2569337D00F36DBC /* PathViewController.swift */; };
+		F9DE34CF2569337D00F36DBC /* PathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34CD2569337D00F36DBC /* PathViewModel.swift */; };
+		F9DE34D52569344300F36DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34D42569344300F36DBC /* ViewController.swift */; };
+		F9DE34DD2569344B00F36DBC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34DC2569344B00F36DBC /* ViewModel.swift */; };
+		F9DE34E22569347800F36DBC /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34E12569347800F36DBC /* CellViewModel.swift */; };
+		F9DE34F9256935D000F36DBC /* PathPointCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34F7256935D000F36DBC /* PathPointCellViewModel.swift */; };
+		F9DE34FA256935D000F36DBC /* PathPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34F8256935D000F36DBC /* PathPointTableViewCell.swift */; };
+		F9DE34FF256935E800F36DBC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE34FE256935E800F36DBC /* TableViewCell.swift */; };
+		F9DE35052569363400F36DBC /* PointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE35042569363400F36DBC /* PointResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +74,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BCC99A380E4E842BF98C4B0 /* Pods-Worksmile-app-Worksmile-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-app-Worksmile-appUITests.release.xcconfig"; path = "Target Support Files/Pods-Worksmile-app-Worksmile-appUITests/Pods-Worksmile-app-Worksmile-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E4EE90E46A65B8163FDCE14 /* Pods-Worksmile-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-app.debug.xcconfig"; path = "Target Support Files/Pods-Worksmile-app/Pods-Worksmile-app.debug.xcconfig"; sourceTree = "<group>"; };
+		97A1BB26CB63AB267AD0762A /* Pods-Worksmile-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-app.release.xcconfig"; path = "Target Support Files/Pods-Worksmile-app/Pods-Worksmile-app.release.xcconfig"; sourceTree = "<group>"; };
+		A292E9FC24860B712C7E5ABF /* Pods-Worksmile-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-appTests.debug.xcconfig"; path = "Target Support Files/Pods-Worksmile-appTests/Pods-Worksmile-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBE50B3F67613324AB63A8CC /* Pods-Worksmile-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-appTests.release.xcconfig"; path = "Target Support Files/Pods-Worksmile-appTests/Pods-Worksmile-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3EB403C9EA935C6CB87FA71 /* Pods-Worksmile-app-Worksmile-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worksmile-app-Worksmile-appUITests.debug.xcconfig"; path = "Target Support Files/Pods-Worksmile-app-Worksmile-appUITests/Pods-Worksmile-app-Worksmile-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6B431592D6705863240D5C1 /* Pods_Worksmile_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worksmile_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E580153EF6557F923904C174 /* Pods_Worksmile_app_Worksmile_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worksmile_app_Worksmile_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F279EA48E03208DECC848664 /* Pods_Worksmile_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worksmile_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91D0C8A256AACDB006C85B4 /* PathAnomalyInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnomalyInteractorTests.swift; sourceTree = "<group>"; };
+		F91D0C8F256AAD1D006C85B4 /* MockPointsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPointsService.swift; sourceTree = "<group>"; };
+		F91D0CAF256AB248006C85B4 /* PathViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathViewModelTests.swift; sourceTree = "<group>"; };
+		F91D0CC2256AC67E006C85B4 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		F91D0CCD256B0671006C85B4 /* PathPointCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPointCellViewModelTests.swift; sourceTree = "<group>"; };
+		F91D0CD5256B0AA5006C85B4 /* PathMapCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMapCellViewModelTests.swift; sourceTree = "<group>"; };
+		F91D0CF7256B1755006C85B4 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
+		F91D0F7C256C6508006C85B4 /* SnapshotContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotContainerView.swift; sourceTree = "<group>"; };
+		F91D0F84256C6542006C85B4 /* SnapshotTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTableView.swift; sourceTree = "<group>"; };
+		F91D0F89256C656C006C85B4 /* TableViewCellSnapshotContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSnapshotContainerView.swift; sourceTree = "<group>"; };
+		F94CA135256AA3E3004B8B18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F94CA13A256AA40A004B8B18 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F94CA13E256AA421004B8B18 /* StringsGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsGen.swift; sourceTree = "<group>"; };
+		F94CA13F256AA421004B8B18 /* AssetsGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsGen.swift; sourceTree = "<group>"; };
+		F94CA145256AA5BF004B8B18 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F94CA14D256AA5CE004B8B18 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F9602E5E2569384B00367492 /* String+double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+double.swift"; sourceTree = "<group>"; };
+		F9602E672569397500367492 /* PointsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsService.swift; sourceTree = "<group>"; };
+		F9602E6C25693A0F00367492 /* WorksmileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksmileError.swift; sourceTree = "<group>"; };
+		F9602E7125693B1600367492 /* JSONDecoder+default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+default.swift"; sourceTree = "<group>"; };
+		F9602E7725693BB600367492 /* CellsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsDataSource.swift; sourceTree = "<group>"; };
+		F9602E7D25693D6B00367492 /* PathMapCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMapCellViewModel.swift; sourceTree = "<group>"; };
+		F9602E7E25693D6B00367492 /* PathMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMapTableViewCell.swift; sourceTree = "<group>"; };
+		F9602E8825694D9E00367492 /* UITableView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
+		F9602E8D25694DDC00367492 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F9602EA82569621800367492 /* Array+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeAccess.swift"; sourceTree = "<group>"; };
+		F9602EAD2569937B00367492 /* UIScrollView+rxReloadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+rxReloadData.swift"; sourceTree = "<group>"; };
+		F9602EB2256994E100367492 /* PathAnomalyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnomalyInteractor.swift; sourceTree = "<group>"; };
+		F9602EBB2569B05000367492 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		F9602EC32569B21B00367492 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		F9C6279025681D8800DFC9F2 /* Worksmile-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Worksmile-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C6279325681D8800DFC9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C6279525681D8800DFC9F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9C6279725681D8800DFC9F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9C6279A25681D8800DFC9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9C6279C25681D8A00DFC9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C6279F25681D8A00DFC9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C627A125681D8A00DFC9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C627A625681D8B00DFC9F2 /* Worksmile-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Worksmile-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9C627AA25681D8B00DFC9F2 /* Worksmile_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worksmile_appTests.swift; sourceTree = "<group>"; };
 		F9C627AC25681D8B00DFC9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C627B125681D8B00DFC9F2 /* Worksmile-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Worksmile-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C627B525681D8B00DFC9F2 /* Worksmile_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worksmile_appUITests.swift; sourceTree = "<group>"; };
 		F9C627B725681D8B00DFC9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C627EE256932B900DFC9F2 /* path.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = path.json; sourceTree = "<group>"; };
+		F9DE34CC2569337D00F36DBC /* PathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathViewController.swift; sourceTree = "<group>"; };
+		F9DE34CD2569337D00F36DBC /* PathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathViewModel.swift; sourceTree = "<group>"; };
+		F9DE34D42569344300F36DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9DE34DC2569344B00F36DBC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F9DE34E12569347800F36DBC /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		F9DE34F7256935D000F36DBC /* PathPointCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPointCellViewModel.swift; sourceTree = "<group>"; };
+		F9DE34F8256935D000F36DBC /* PathPointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPointTableViewCell.swift; sourceTree = "<group>"; };
+		F9DE34FE256935E800F36DBC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F9DE35042569363400F36DBC /* PointResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CFDE3125849B35FD6F0701 /* Pods_Worksmile_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511A9309CF34BA35FC3A8A38 /* Pods_Worksmile_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +157,105 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3594536C9A8D0E35FB5C32 /* Pods_Worksmile_app_Worksmile_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A766FBF1895D5AC687ADFA13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E4EE90E46A65B8163FDCE14 /* Pods-Worksmile-app.debug.xcconfig */,
+				97A1BB26CB63AB267AD0762A /* Pods-Worksmile-app.release.xcconfig */,
+				D3EB403C9EA935C6CB87FA71 /* Pods-Worksmile-app-Worksmile-appUITests.debug.xcconfig */,
+				1BCC99A380E4E842BF98C4B0 /* Pods-Worksmile-app-Worksmile-appUITests.release.xcconfig */,
+				A292E9FC24860B712C7E5ABF /* Pods-Worksmile-appTests.debug.xcconfig */,
+				CBE50B3F67613324AB63A8CC /* Pods-Worksmile-appTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B980FB4720E23CBBB837A8C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B431592D6705863240D5C1 /* Pods_Worksmile_app.framework */,
+				E580153EF6557F923904C174 /* Pods_Worksmile_app_Worksmile_appUITests.framework */,
+				F279EA48E03208DECC848664 /* Pods_Worksmile_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F91D0F7B256C64F9006C85B4 /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				F91D0CF7256B1755006C85B4 /* SnapshotTestCase.swift */,
+				F91D0F7C256C6508006C85B4 /* SnapshotContainerView.swift */,
+				F91D0F89256C656C006C85B4 /* TableViewCellSnapshotContainerView.swift */,
+				F91D0F84256C6542006C85B4 /* SnapshotTableView.swift */,
+			);
+			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		F94CA133256AA366004B8B18 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				F94CA13F256AA421004B8B18 /* AssetsGen.swift */,
+				F94CA13E256AA421004B8B18 /* StringsGen.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		F9602E5C2569383300367492 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9602E5E2569384B00367492 /* String+double.swift */,
+				F9602E7125693B1600367492 /* JSONDecoder+default.swift */,
+				F9602E8825694D9E00367492 /* UITableView+extensions.swift */,
+				F9602EA82569621800367492 /* Array+SafeAccess.swift */,
+				F9602EAD2569937B00367492 /* UIScrollView+rxReloadData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F9602E662569395B00367492 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9602E6C25693A0F00367492 /* WorksmileError.swift */,
+				F9602E672569397500367492 /* PointsService.swift */,
+				F91D0C8F256AAD1D006C85B4 /* MockPointsService.swift */,
+				F9DE35032569362500F36DBC /* Models */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F9602E7625693BA800367492 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F9602E7725693BB600367492 /* CellsDataSource.swift */,
+				F9602E8D25694DDC00367492 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F9602E7C25693D5800367492 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F9602E7E25693D6B00367492 /* PathMapTableViewCell.swift */,
+				F9602E7D25693D6B00367492 /* PathMapCellViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F9602EBA2569B03800367492 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9602EBB2569B05000367492 /* Point.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F9C6278725681D8800DFC9F2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +263,8 @@
 				F9C627A925681D8B00DFC9F2 /* Worksmile-appTests */,
 				F9C627B425681D8B00DFC9F2 /* Worksmile-appUITests */,
 				F9C6279125681D8800DFC9F2 /* Products */,
+				A766FBF1895D5AC687ADFA13 /* Pods */,
+				B980FB4720E23CBBB837A8C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +283,16 @@
 			children = (
 				F9C6279325681D8800DFC9F2 /* AppDelegate.swift */,
 				F9C6279525681D8800DFC9F2 /* SceneDelegate.swift */,
-				F9C6279725681D8800DFC9F2 /* ViewController.swift */,
-				F9C6279925681D8800DFC9F2 /* Main.storyboard */,
-				F9C6279C25681D8A00DFC9F2 /* Assets.xcassets */,
-				F9C6279E25681D8A00DFC9F2 /* LaunchScreen.storyboard */,
+				F91D0CC2256AC67E006C85B4 /* AppDependencies.swift */,
+				F94CA145256AA5BF004B8B18 /* AppCoordinator.swift */,
+				F9DE34D32569343600F36DBC /* Base */,
+				F9DE34C82569335500F36DBC /* ViewControllers */,
+				F9602EBA2569B03800367492 /* Models */,
+				F9602E662569395B00367492 /* Services */,
+				F9602E7625693BA800367492 /* Protocols */,
+				F9602E5C2569383300367492 /* Extensions */,
+				F94CA133256AA366004B8B18 /* SwiftGen */,
+				F9C627F3256932BD00DFC9F2 /* Resources */,
 				F9C627A125681D8A00DFC9F2 /* Info.plist */,
 			);
 			path = "Worksmile-app";
@@ -113,7 +301,11 @@
 		F9C627A925681D8B00DFC9F2 /* Worksmile-appTests */ = {
 			isa = PBXGroup;
 			children = (
-				F9C627AA25681D8B00DFC9F2 /* Worksmile_appTests.swift */,
+				F91D0F7B256C64F9006C85B4 /* Snapshot */,
+				F91D0C8A256AACDB006C85B4 /* PathAnomalyInteractorTests.swift */,
+				F91D0CAF256AB248006C85B4 /* PathViewModelTests.swift */,
+				F91D0CCD256B0671006C85B4 /* PathPointCellViewModelTests.swift */,
+				F91D0CD5256B0AA5006C85B4 /* PathMapCellViewModelTests.swift */,
 				F9C627AC25681D8B00DFC9F2 /* Info.plist */,
 			);
 			path = "Worksmile-appTests";
@@ -128,6 +320,75 @@
 			path = "Worksmile-appUITests";
 			sourceTree = "<group>";
 		};
+		F9C627F3256932BD00DFC9F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9C6279E25681D8A00DFC9F2 /* LaunchScreen.storyboard */,
+				F9C6279C25681D8A00DFC9F2 /* Assets.xcassets */,
+				F9C627EE256932B900DFC9F2 /* path.json */,
+				F94CA136256AA3E3004B8B18 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9DE34C82569335500F36DBC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE34E62569356200F36DBC /* Path */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9DE34D32569343600F36DBC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F9602EC32569B21B00367492 /* NavigationController.swift */,
+				F9DE34D42569344300F36DBC /* ViewController.swift */,
+				F9DE34DC2569344B00F36DBC /* ViewModel.swift */,
+				F9DE34E12569347800F36DBC /* CellViewModel.swift */,
+				F9DE34FE256935E800F36DBC /* TableViewCell.swift */,
+				F94CA14D256AA5CE004B8B18 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F9DE34E62569356200F36DBC /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE34CC2569337D00F36DBC /* PathViewController.swift */,
+				F9DE34CD2569337D00F36DBC /* PathViewModel.swift */,
+				F9602EB2256994E100367492 /* PathAnomalyInteractor.swift */,
+				F9DE34F52569359900F36DBC /* Cells */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		F9DE34F52569359900F36DBC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F9602E7C25693D5800367492 /* Map */,
+				F9DE34F6256935A800F36DBC /* Point */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F9DE34F6256935A800F36DBC /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE34F8256935D000F36DBC /* PathPointTableViewCell.swift */,
+				F9DE34F7256935D000F36DBC /* PathPointCellViewModel.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		F9DE35032569362500F36DBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE35042569363400F36DBC /* PointResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C627BA25681D8B00DFC9F2 /* Build configuration list for PBXNativeTarget "Worksmile-app" */;
 			buildPhases = (
+				32A78A4C4CC9D300A7638CFB /* [CP] Check Pods Manifest.lock */,
 				F9C6278C25681D8800DFC9F2 /* Sources */,
 				F9C6278D25681D8800DFC9F2 /* Frameworks */,
 				F9C6278E25681D8800DFC9F2 /* Resources */,
+				CDF91EC33E541EB18814A1FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C627BD25681D8B00DFC9F2 /* Build configuration list for PBXNativeTarget "Worksmile-appTests" */;
 			buildPhases = (
+				E6476D0CD51A178920B6D331 /* [CP] Check Pods Manifest.lock */,
 				F9C627A225681D8B00DFC9F2 /* Sources */,
 				F9C627A325681D8B00DFC9F2 /* Frameworks */,
 				F9C627A425681D8B00DFC9F2 /* Resources */,
+				E3AE7FF287F4BF667EA9EC54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C627C025681D8B00DFC9F2 /* Build configuration list for PBXNativeTarget "Worksmile-appUITests" */;
 			buildPhases = (
+				D90B77959D411854A660D402 /* [CP] Check Pods Manifest.lock */,
 				F9C627AD25681D8B00DFC9F2 /* Sources */,
 				F9C627AE25681D8B00DFC9F2 /* Frameworks */,
 				F9C627AF25681D8B00DFC9F2 /* Resources */,
+				B41AA27A54823DDB38CCE0A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +480,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pl-PL",
 			);
 			mainGroup = F9C6278725681D8800DFC9F2;
 			productRefGroup = F9C6279125681D8800DFC9F2 /* Products */;
@@ -232,8 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C627A025681D8A00DFC9F2 /* LaunchScreen.storyboard in Resources */,
+				F94CA134256AA3E3004B8B18 /* Localizable.strings in Resources */,
 				F9C6279D25681D8A00DFC9F2 /* Assets.xcassets in Resources */,
-				F9C6279B25681D8800DFC9F2 /* Main.storyboard in Resources */,
+				F9C627EF256932B900DFC9F2 /* path.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +522,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32A78A4C4CC9D300A7638CFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Worksmile-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41AA27A54823DDB38CCE0A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app-Worksmile-appUITests/Pods-Worksmile-app-Worksmile-appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app-Worksmile-appUITests/Pods-Worksmile-app-Worksmile-appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app-Worksmile-appUITests/Pods-Worksmile-app-Worksmile-appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF91EC33E541EB18814A1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app/Pods-Worksmile-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app/Pods-Worksmile-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Worksmile-app/Pods-Worksmile-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D90B77959D411854A660D402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Worksmile-app-Worksmile-appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AE7FF287F4BF667EA9EC54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-appTests/Pods-Worksmile-appTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worksmile-appTests/Pods-Worksmile-appTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Worksmile-appTests/Pods-Worksmile-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6476D0CD51A178920B6D331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Worksmile-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9C6278C25681D8800DFC9F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C6279825681D8800DFC9F2 /* ViewController.swift in Sources */,
+				F9DE34F9256935D000F36DBC /* PathPointCellViewModel.swift in Sources */,
+				F9602E5F2569384B00367492 /* String+double.swift in Sources */,
+				F9DE34FA256935D000F36DBC /* PathPointTableViewCell.swift in Sources */,
+				F94CA140256AA421004B8B18 /* StringsGen.swift in Sources */,
+				F91D0C9A256AB00B006C85B4 /* MockPointsService.swift in Sources */,
+				F9DE35052569363400F36DBC /* PointResponse.swift in Sources */,
+				F9602E6D25693A0F00367492 /* WorksmileError.swift in Sources */,
+				F9DE34D52569344300F36DBC /* ViewController.swift in Sources */,
+				F9602E8925694D9E00367492 /* UITableView+extensions.swift in Sources */,
+				F9602EC42569B21B00367492 /* NavigationController.swift in Sources */,
+				F9602EB3256994E100367492 /* PathAnomalyInteractor.swift in Sources */,
+				F9602EBC2569B05000367492 /* Point.swift in Sources */,
 				F9C6279425681D8800DFC9F2 /* AppDelegate.swift in Sources */,
 				F9C6279625681D8800DFC9F2 /* SceneDelegate.swift in Sources */,
+				F94CA141256AA421004B8B18 /* AssetsGen.swift in Sources */,
+				F9DE34E22569347800F36DBC /* CellViewModel.swift in Sources */,
+				F9602E682569397500367492 /* PointsService.swift in Sources */,
+				F9602E8E25694DDC00367492 /* ReusableView.swift in Sources */,
+				F9602E7825693BB600367492 /* CellsDataSource.swift in Sources */,
+				F94CA14E256AA5CE004B8B18 /* Coordinator.swift in Sources */,
+				F9602E7F25693D6B00367492 /* PathMapCellViewModel.swift in Sources */,
+				F9DE34CE2569337D00F36DBC /* PathViewController.swift in Sources */,
+				F91D0CC3256AC67E006C85B4 /* AppDependencies.swift in Sources */,
+				F94CA146256AA5BF004B8B18 /* AppCoordinator.swift in Sources */,
+				F9DE34FF256935E800F36DBC /* TableViewCell.swift in Sources */,
+				F9602EAE2569937B00367492 /* UIScrollView+rxReloadData.swift in Sources */,
+				F9602E7225693B1600367492 /* JSONDecoder+default.swift in Sources */,
+				F9DE34DD2569344B00F36DBC /* ViewModel.swift in Sources */,
+				F9DE34CF2569337D00F36DBC /* PathViewModel.swift in Sources */,
+				F9602E8025693D6B00367492 /* PathMapTableViewCell.swift in Sources */,
+				F9602EA92569621800367492 /* Array+SafeAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +685,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C627AB25681D8B00DFC9F2 /* Worksmile_appTests.swift in Sources */,
+				F91D0F85256C6542006C85B4 /* SnapshotTableView.swift in Sources */,
+				F91D0F7D256C6508006C85B4 /* SnapshotContainerView.swift in Sources */,
+				F91D0CF8256B1755006C85B4 /* SnapshotTestCase.swift in Sources */,
+				F91D0CD6256B0AA5006C85B4 /* PathMapCellViewModelTests.swift in Sources */,
+				F91D0F8A256C656C006C85B4 /* TableViewCellSnapshotContainerView.swift in Sources */,
+				F91D0CCE256B0671006C85B4 /* PathPointCellViewModelTests.swift in Sources */,
+				F91D0C8B256AACDB006C85B4 /* PathAnomalyInteractorTests.swift in Sources */,
+				F91D0CB0256AB248006C85B4 /* PathViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +720,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9C6279925681D8800DFC9F2 /* Main.storyboard */ = {
+		F94CA136256AA3E3004B8B18 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F9C6279A25681D8800DFC9F2 /* Base */,
+				F94CA135256AA3E3004B8B18 /* en */,
+				F94CA13A256AA40A004B8B18 /* pl-PL */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		F9C6279E25681D8A00DFC9F2 /* LaunchScreen.storyboard */ = {
@@ -319,6 +744,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,7 +792,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,6 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -421,7 +848,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,17 +860,21 @@
 		};
 		F9C627BB25681D8B00DFC9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4EE90E46A65B8163FDCE14 /* Pods-Worksmile-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = "Worksmile-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Worksmile-app";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.worksmile-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,17 +883,21 @@
 		};
 		F9C627BC25681D8B00DFC9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A1BB26CB63AB267AD0762A /* Pods-Worksmile-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = "Worksmile-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Worksmile-app";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.worksmile-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,8 +906,8 @@
 		};
 		F9C627BE25681D8B00DFC9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292E9FC24860B712C7E5ABF /* Pods-Worksmile-appTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
@@ -493,8 +928,8 @@
 		};
 		F9C627BF25681D8B00DFC9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE50B3F67613324AB63A8CC /* Pods-Worksmile-appTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
@@ -515,8 +950,8 @@
 		};
 		F9C627C125681D8B00DFC9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EB403C9EA935C6CB87FA71 /* Pods-Worksmile-app-Worksmile-appUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = "Worksmile-appUITests/Info.plist";
@@ -535,8 +970,8 @@
 		};
 		F9C627C225681D8B00DFC9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCC99A380E4E842BF98C4B0 /* Pods-Worksmile-app-Worksmile-appUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = "Worksmile-appUITests/Info.plist";

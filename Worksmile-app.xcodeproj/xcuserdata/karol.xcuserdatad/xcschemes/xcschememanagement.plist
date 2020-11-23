@@ -7,7 +7,25 @@
 		<key>Worksmile-app.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F9C6278F25681D8800DFC9F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9C627A525681D8B00DFC9F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9C627B025681D8B00DFC9F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

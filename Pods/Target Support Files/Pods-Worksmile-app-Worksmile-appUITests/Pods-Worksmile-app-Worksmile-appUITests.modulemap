@@ -1,0 +1,6 @@
+framework module Pods_Worksmile_app_Worksmile_appUITests {
+  umbrella header "Pods-Worksmile-app-Worksmile-appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
