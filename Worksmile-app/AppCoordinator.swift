@@ -23,10 +23,10 @@ final class AppCoordinator: Coordinator {
     }
 
     func start() {
-        let viewModel = PathViewModel(dependencies:
-                                        .init(pointsService: AppDependencies.current.pointsService,
-                                              anomalyInteractor: PathAnomalyInteractor()
-                                        ))
+        let viewModel = PathViewModel(
+            dependencies: .init(pointsService: AppDependencies.current.pointsService,
+                                anomalyInteractor: PathAnomalyInteractor()
+            ))
         let controller = PathViewController()
         controller.viewModel = viewModel
 
